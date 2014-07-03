@@ -25,6 +25,8 @@ Install the appropriate package for your system. My current distro is Linux Mint
     Linux Mint 16 ~> Ubuntu Saucy (13.10)
     Linux Mint 17 ~> Ubuntu Trusty (14.04 LTS)
 
+*Note: On Linux Mint 17, the latest VirtualBox version is available via software manager, so I'm using that instead. Opening the .deb file via QApt Package Installer (right-click context menu) triggered the automatic version check and advice, so this could easily change in the future.*
+
 
 #### Step 2: Install Vagrant
 * [http://docs.vagrantup.com/v2/installation/index.html](http://docs.vagrantup.com/v2/installation/index.html)
