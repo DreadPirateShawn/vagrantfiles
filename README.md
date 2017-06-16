@@ -30,7 +30,7 @@ Install the appropriate package for your system. My current distro is Linux Mint
 
 #### Step 2: Install Vagrant
 * [http://docs.vagrantup.com/v2/installation/index.html](http://docs.vagrantup.com/v2/installation/index.html)
-* [http://www.vagrantup.com/downloads](http://www.vagrantup.com/downloads)
+* [http://www.vagrantup.com/downloads.html](http://www.vagrantup.com/downloads.html)
 
 Install the appropriate package for your system. For a Debian-based 64-bit OS, for instance, you'd use:
 
