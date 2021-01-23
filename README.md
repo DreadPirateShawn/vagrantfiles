@@ -113,7 +113,11 @@ A couple possible errors:
 
 ##### Error: "AMD-V is disabled in the BIOS (or by the host OS) (VERR_SVM_DISABLED)"
 
-You may need to [enable virtualization in the BIOS](https://askubuntu.com/questions/118006/amd-v-is-not-enabled-in-virtualbox-on-amd-apu).
+You may need to enable virtualization in the BIOS, e.g. something like:
+* BIOS -> System Config -> Virtualization Technology <Enabled>
+* BIOS -> M.T.I. -> Adv Freq Settings -> Adv CPU Core Settings -> SVM Mode <Enabled>
+
+Other keywords may be VT-x, or Google around for fresh "<brand> enable virtualization" info.
 
 ##### Error: Permission denied (publickey).
 ##### Error: Could not open a connection to your authentication agent.
