@@ -93,7 +93,7 @@ Vagrant Commands
 | vagrant up | Run the VM for the first time |
 | vagrant ssh | Use the VM |
 | vagrant provision | If you've edited the Vagrantfile, this re-provisions the VM |
-| vagrant suspect | Pause the VM |
+| vagrant suspend | Pause the VM |
 | vagrant halt | Stop the VM |
 | vagrant destroy | Destroy the VM |
 
