@@ -18,7 +18,7 @@ Setup: Required
 -----
 
 #### Step 1: Install VirtualBox
-* [https://www.virtualbox.org/wiki/Linux_Downloads](https://www.virtualbox.org/wiki/Linux_Downloads)
+* https://www.virtualbox.org/wiki/Linux_Downloads
 
 Install the appropriate package for your system. My current distro is Linux Mint, so I use one of these:
 
@@ -29,15 +29,15 @@ Install the appropriate package for your system. My current distro is Linux Mint
 
 
 #### Step 2: Install Vagrant
-* [http://docs.vagrantup.com/v2/installation/index.html](http://docs.vagrantup.com/v2/installation/index.html)
-* [http://www.vagrantup.com/downloads.html](http://www.vagrantup.com/downloads.html)
+* http://docs.vagrantup.com/v2/installation/index.html
+* http://www.vagrantup.com/downloads.html
 
 Install the appropriate package for your system. For a Debian-based 64-bit OS, for instance, you'd use:
 
     Linux DEB 64-bit
 
 #### Step 3: Install vagrant-cachier extension
-* [https://github.com/fgrehm/vagrant-cachier](https://github.com/fgrehm/vagrant-cachier)
+* https://github.com/fgrehm/vagrant-cachier
 
 This enables apt-get to avoid re-downloading package data upon each `vagrant destroy; vagrant up;` cycle.
 
@@ -100,7 +100,7 @@ Vagrant Commands
 [Official Vagrant CLI reference](http://docs.vagrantup.com/v2/cli/)
 
 #### Alternate Vagrant boxes
-* [https://vagrantcloud.com/discover/popular](https://vagrantcloud.com/discover/popular)
+* https://vagrantcloud.com/discover/popular
 
 
 <a name="troubleshooting"></a>
@@ -129,7 +129,6 @@ killall ssh-agent; eval `ssh-agent`
 ```
 
 ##### Additional References:
-* [https://coderwall.com/p/p3bj2a](https://coderwall.com/p/p3bj2a)
-* [https://help.github.com/articles/using-ssh-agent-forwarding](https://help.github.com/articles/using-ssh-agent-forwarding)
-* [http://stackoverflow.com/questions/11955525/how-to-use-ssh-agent-forwarding-with-vagrant-ssh](http://stackoverflow.com/questions/11955525/how-to-use-ssh-agent-forwarding-with-vagrant-ssh)
-
+* https://coderwall.com/p/p3bj2a
+* https://help.github.com/articles/using-ssh-agent-forwarding
+* http://stackoverflow.com/questions/11955525/how-to-use-ssh-agent-forwarding-with-vagrant-ssh
