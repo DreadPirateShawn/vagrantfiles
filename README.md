@@ -17,33 +17,40 @@ Contents
 Setup: Required
 -----
 
-#### Step 1: Install VirtualBox
+#### Step 1: Install VirtualBox and Vagrant
+
+Install the appropriate packages for your system.
+
+##### Debian ecosystem (e.g. Linux Mint)
+
 * https://www.virtualbox.org/wiki/Linux_Downloads
-
-Install the appropriate package for your system. My current distro is Linux Mint, so I use one of these:
-
-    Linux Mint 16 ~> Ubuntu Saucy (13.10)
-    Linux Mint 17 ~> Ubuntu Trusty (14.04 LTS)
-
-*Note: On Linux Mint 17, the latest VirtualBox version is available via software manager, so I'm using that instead. Opening the .deb file via QApt Package Installer (right-click context menu) triggered the automatic version check and advice, so this could easily change in the future.*
-
-
-#### Step 2: Install Vagrant
+  * e.g. for Linux Mint, `Linux Mint 16 ~> Ubuntu Saucy (13.10)` or `Linux Mint 17 ~> Ubuntu Trusty (14.04 LTS)`
+  * *Note: On Linux Mint 17, the latest VirtualBox version is available via software manager, so use that instead. (Opening the .deb file via QApt Package Installer (right-click context menu) triggered the automatic version check and advice, so this could easily change in the future.)*
 * http://docs.vagrantup.com/v2/installation/index.html
 * http://www.vagrantup.com/downloads.html
+  * e.g. for a Debian-based 64-bit OS, `Linux DEB 64-bit`
 
-Install the appropriate package for your system. For a Debian-based 64-bit OS, for instance, you'd use:
+##### Arch ecosystem (e.g. Manjaro)
 
-    Linux DEB 64-bit
+* https://wiki.archlinux.org/title/VirtualBox
+* https://wiki.archlinux.org/title/Vagrant
 
-#### Step 3: Install vagrant-cachier extension
-* https://github.com/fgrehm/vagrant-cachier
+```sh
+sudo pacman -S virtualbox vagrant
+sudo reboot
+```
 
+#### Step 2: Install vagrant plugins
+
+* vagrant-vbguest, vagrant-share
+These appear to be basic dependencies, e.g. for sharing filesystem.
+* [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier)
 This enables apt-get to avoid re-downloading package data upon each `vagrant destroy; vagrant up;` cycle.
 
-    vagrant plugin install vagrant-cachier
-
-
+```sh
+vagrant plugin install vagrant-vbguest vagrant-share
+vagrant plugin install vagrant-cachier
+```
 
 <a name="personalize"></a>
 Setup: Personalize
