@@ -114,6 +114,13 @@ Vagrant Commands
 Troubleshooting
 ---------------
 
+#### General update
+
+This can help pre-emptively, to ensure up-to-date VM image:
+```sh
+vagrant box update
+```
+
 #### GitHub access from VM
 
 A couple possible errors:
