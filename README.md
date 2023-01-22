@@ -129,7 +129,7 @@ A couple possible errors:
 
 You may need to enable virtualization in the BIOS, e.g. something like:
 * BIOS -> System Config -> Virtualization Technology <Enabled>
-* BIOS -> M.T.I. -> Adv Freq Settings -> Adv CPU Core Settings -> SVM Mode <Enabled>
+* BIOS -> M.I.T. -> Adv Freq Settings -> Adv CPU Settings -> SVM Mode <Enabled>
 
 Other keywords may be VT-x, or Google around for fresh "<brand> enable virtualization" info.
 
