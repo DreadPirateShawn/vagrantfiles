@@ -30,13 +30,13 @@ Install the appropriate packages for your system.
 * http://www.vagrantup.com/downloads.html
   * e.g. for a Debian-based 64-bit OS, `Linux DEB 64-bit`
 
-##### Arch ecosystem (e.g. Manjaro)
+##### Arch ecosystem
 
 * https://wiki.archlinux.org/title/VirtualBox
 * https://wiki.archlinux.org/title/Vagrant
 
 ```sh
-sudo pacman -S virtualbox vagrant
+sudo pacman -S vagrant virtualbox virtualbox-host-modules-arch
 sudo reboot
 ```
 
@@ -113,6 +113,12 @@ Vagrant Commands
 <a name="troubleshooting"></a>
 Troubleshooting
 ---------------
+
+#### Logging
+```sh
+VAGRANT_LOG=info vagrant ...
+vagrant --debug ...
+```
 
 #### General update
 
